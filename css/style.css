@@ -29,19 +29,16 @@ body {
 }
 
 .nav-botton {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #2196f3;
-  background-color: white;
+  color: #212121;
   text-decoration: none;
 }
 
 .nav-botton-hover :hover {
-  background-color: white;
   color: #2196f3;
 }
 /* Футер */
