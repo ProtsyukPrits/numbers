@@ -1,3 +1,47 @@
 body {
-  color: #2a2a2a;
+  font-family: Roboto;
+}
+
+/* Шапка */
+
+/* Веб */
+
+.logo-web {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+
+.logo-studio-black {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: black;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+/* Футер */
+
+.grey-section {
+  color: white;
+  background-color: #2f303a;
+}
+
+/* Веб */
+
+.logo-studio-white {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #ffffff;
 }
