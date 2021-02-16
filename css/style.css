@@ -28,7 +28,7 @@ body {
   text-decoration: none;
 }
 
-.nav-botton {
+.nav-botton-hover {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -38,9 +38,11 @@ body {
   text-decoration: none;
 }
 
-.nav-botton-hover :hover {
+.nav-botton-hover:hover {
   color: #2196f3;
+  background-color: white;
 }
+
 /* Футер */
 
 .grey-section {
