@@ -4,7 +4,7 @@ body {
 
 /* Шапка */
 
-/* Веб */
+/* веб */
 
 .logo-web {
   font-family: Raleway;
@@ -28,6 +28,7 @@ body {
   text-decoration: none;
 }
 
+/* кнопки главной навигации */
 .nav-botton-hover {
   font-style: normal;
   font-weight: 500;
