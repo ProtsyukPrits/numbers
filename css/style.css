@@ -44,14 +44,76 @@ body {
   background-color: white;
 }
 
+/* контакты  */
+.contacts-head-hover {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.contacts-head-hover:hover {
+  color: #2196f3;
+  background-color: white;
+}
+
+/* Главное  */
+.main-service {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.botton {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+.botton-hover {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.botton-hover:hover {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 /* Футер */
 
+/* заливка для футера и главного контента */
 .grey-section {
   color: white;
   background-color: #2f303a;
 }
 
 /* Веб */
+.logo-web {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
 
 .logo-studio-white {
   font-family: Raleway;
@@ -60,4 +122,27 @@ body {
   font-size: 26px;
   line-height: 31px;
   color: #ffffff;
+}
+
+/* контакты */
+.adress {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
