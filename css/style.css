@@ -48,7 +48,7 @@ body {
 .contacts-head-hover {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -62,6 +62,8 @@ body {
 }
 
 /* Главное  */
+
+/* Первая страница */
 .main-service {
   font-family: Roboto;
   font-style: normal;
@@ -74,11 +76,7 @@ body {
   color: #ffffff;
 }
 
-.botton {
-  background-color: #ffffff;
-  color: #212121;
-}
-
+/* главная кнопка */
 .botton-hover {
   font-family: Roboto;
   font-style: normal;
@@ -94,9 +92,105 @@ body {
 
 .botton-hover:hover {
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  color: white;
 }
+
+/* заголовок для занятия и команды */
+.title-hobby-team {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* заголовок текст */
+.title-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+/* текст */
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* имена команды */
+.name-teammates {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* професия команды */
+.profession-teammates {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Вторая страница */
+/* Якора */
+.anchor {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.anchor:hover {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* меню просмотра */
+.menu-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.menu-classification {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 /* Футер */
 
 /* заливка для футера и главного контента */
