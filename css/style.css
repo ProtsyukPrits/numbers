@@ -63,14 +63,13 @@ body {
 
 /* Главное  */
 
-/* Первая страница */
+/* 1 Первая страница */
 .main-service {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -102,7 +101,6 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -152,7 +150,7 @@ body {
   color: #757575;
 }
 
-/* Вторая страница */
+/* 2 Вторая страница */
 /* Якора */
 .anchor {
   font-family: Roboto;
