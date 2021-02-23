@@ -29,7 +29,7 @@ body {
 }
 
 /* кнопки главной навигации */
-.nav-botton-hover {
+.nav-button-hover {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -39,7 +39,7 @@ body {
   text-decoration: none;
 }
 
-.nav-botton-hover:hover {
+.nav-button-hover:hover {
   color: #2196f3;
   background-color: white;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 /* главная кнопка */
-.botton-hover {
+.button-hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -89,7 +89,7 @@ body {
   color: #212121;
 }
 
-.botton-hover:hover {
+.button-hover:hover {
   background: #2196f3;
   color: white;
 }
