@@ -1,309 +1,37 @@
-body {
-  font-family: Roboto;
-}
-
-/* Шапка */
-
-/* веб */
-.box-top-line {
+.box-button {
   display: flex;
   justify-content: center;
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  background-color: white;
 }
 
-/* линия между шапкой и верхом */
-.line-border {
-  position: absolute;
-  width: 1600px;
-  height: 0px;
-  left: 0px;
-  top: 80px;
-  border: 1px solid #ececec;
+.button-number {
+  width: 100px;
+  outline: red;
 }
 
-.logo-web {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #2196f3;
-}
-
-.logo-studio-black {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: black;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  text-decoration: none;
-}
-
-/* бокс для навигаций */
 .box {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  width: 294px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-  background-color: black;
+  flex-direction: row;
+  justify-content: center;
 }
 
-/* кнопки главной навигации */
-.nav-button-hover {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-}
-
-.nav-button-hover:hover {
-  color: #2196f3;
-  background-color: white;
-}
-
-/* контакты  */
-.contacts-head-hover {
-  display: flex;
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-}
-
-.contacts-head-hover:hover {
-  color: #2196f3;
-  background-color: white;
-}
-
-.tel-head-hover {
-  display: flex;
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  text-decoration: none;
-}
-
-.tel-head-hover:hover {
-  color: #2196f3;
-  background-color: white;
-}
-/* Главное  */
-
-/* 1 Первая страница */
-.main-service {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-/* главная кнопка */
-.button-hover {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
+.number-column {
+  width: 130px;
+  background-color: rgb(124, 212, 124);
   text-align: center;
-  letter-spacing: 0.06em;
-  color: #212121;
 }
-
-.button-hover:hover {
-  background: #2196f3;
-  color: white;
-}
-
-/* заголовок для занятия и команды */
-.title-hobby-team {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-/* заголовок текст */
-.title-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-/* текст */
-.text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* имена команды */
-.name-teammates {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-/* професия команды */
-.profession-teammates {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* 2 Вторая страница */
-/* Якора */
-.anchor {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+.numbermax-column {
+  width: 130px;
+  background-color: rgb(124, 212, 124);
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  margin-right: 20px;
+}
+.star-column {
+  width: 130px;
+  background-color: rgb(197, 195, 64);
+  text-align: center;
 }
 
-.anchor:hover {
-  background-color: #2196f3;
-  color: white;
-}
-
-/* меню просмотра */
-.menu-name {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: #212121;
-}
-
-.menu-classification {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* Футер */
-
-/* заливка для футера и главного контента */
-.grey-section {
-  color: white;
-  background-color: #2f303a;
-}
-
-/* Веб */
-.logo-web {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #2196f3;
-}
-
-.logo-studio-white {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: #ffffff;
-}
-
-/* контакты */
-.adress {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.contacts-footer {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+.starmax-column {
+  width: 130px;
+  background-color: rgb(197, 195, 64);
 }
