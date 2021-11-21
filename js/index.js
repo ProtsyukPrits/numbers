@@ -1,4 +1,204 @@
+// Proxy
+// --------------wrapp proxy 
+const withDefaulValue = (target, defaultValue = 0) => {
+  return new Proxy(target, {
+    get: (obj, prop) => (prop in obj ? obj[prop] : defaultValue)
+  })
+}
 
+const position = withDefaulValue({
+  x: 24,
+  y:42
+}, 0
+)
+
+// ------------hidden properties
+const withHiddenProps = (target, prefix = '_') => {
+  return new Proxy(target, {
+    has: (obj, prop) => (prop in obj) && (!prop.startsWith(prefix)),
+    ownKeys: obj => Reflect.ownKeys(obj)
+      .filter(p => !p.startsWith(prefix)),
+    get: (obj, prop, receiver) => (prop in receiver ? obj[prop] : void 0)
+  })
+}
+
+
+const data = withHiddenProps({
+  name: 'Dima',
+  age: 26,
+  _uid: '123123'  // приватне поле
+})
+
+
+
+// -----------optimization
+const IndexedArray = new Proxy(Array, {
+  construct(target, [args]) {
+    const index = {}
+    args.forEach(item =>(index[item.id] = item)) 
+    return new Proxy(new target(...args), {
+      get(arr, prop) {
+        switch (prop) {
+          case 'push':   //  push - дозволяє вносити нові дані в масив
+            return item => {
+              index[item.id] = item
+              arr[prop].call(arr, item) // Якщо одиничний виклик тоді call, якщо виклик з n-к-стю тоді apply
+            }
+          case 'findById': // findById - дозволяє швидко знаходити id в консолі 
+            return id => index[id]
+          default:
+            return arr[prop]
+        }
+        }
+      })
+    
+  }
+})
+
+
+const users = new IndexedArray ([
+  { id: 11, name: 'Dima', job: 'Fullstack', age: 25 },
+  { id: 22, name: 'Elena', job: 'Student', age: 19 },
+  { id: 33, name: 'Victor', job: 'Backend', age: 21 },
+  { id: 44, name: 'Vasilisa', job: 'Teacher', age: 30}
+])
+
+
+
+
+// const index = {}
+// userData.forEach(i => (index[i.id] = i)) // индексація по списку обєктів, надаємо кожному обєкту свій id
+
+
+
+
+// -------------proxy object
+
+const person  = {
+  name: 'Dima',
+  age: 25,
+  job: 'Fullstack'
+}
+
+const op = new Proxy(person, {
+  get(target, prop) {  // лавушки для обєкт даних, аналогічний меток як і обєкт, тільки з лавушками
+    // console.log('Getting pror $[prop]')
+    if (!(prop in target)) { // дозволяє компонувати наші три параметри в рядок за допомогою нижнього підкреслення
+      return prop
+        .split('_')
+        .map(p => target[p])
+        .join(' ')
+        }
+    return target[prop]
+  },
+  set(target, prop, value) {  // досволяє викинути помилку при неправильному введені ключа (name, age, job)
+    if (prop in target) {
+      target [prop] = value
+    } else {
+      throw new Error('No ${prop} field in target')
+    }
+  },
+  has(target, prop) {
+    return ['age', 'job'].includes(prop)
+  },
+  deleteProperty(target, prop) {  
+    console.log('Deleting... ', prop)
+    delete target[prop]
+    return true
+  }
+})
+
+// ------------proxy funstion
+const log = text => `Log: ${text}` // принципово вказати зворотні кавички ``, щоб працбвав text
+
+const fp = new Proxy(log, {
+  apply(target, thisArg, args) {
+    console.log('Calling  fn... ')
+    
+    return target.apply(thisArg, args).toUpperCase()
+  }
+})
+
+//---------------proxy classes
+
+class Person {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+}
+
+
+const PersonProxy = new Proxy(Person, {
+  construct(target, args) {  // this is trap)
+    console.log('Construct... ')
+
+    return new Proxy(new target(...args), {
+      get(t, prop) {
+        console.log(`Getting prop "${prop}"`)
+        return t[prop]
+      }
+    })
+  }
+})
+
+
+const p = new PersonProxy('Maxim', 30)
+
+
+
+
+
+
+
+// +++++++++++++++++++++
+
+// Async and await
+
+
+// const delay = ms => {
+//   return new Promise(resolve => setTimeout(() => resolve(), ms))
+  
+// }
+
+// const url = 'https://jsonplaceholder.typicode.com/todos'
+
+
+
+// function fetchTodos() {
+//   console.log('Fetch todo started...')
+//   return delay(2000)
+//     .then(() => fetch(url))
+//     .then(response => response.json())
+// }
+
+// fetchTodos()
+//   .then(data => {
+//   console.log('Data: ', data)
+//   })
+// .catch(e => console.error(e))
+
+
+// await переносимо в блок try, і дописуємо блок з помилкою catch
+
+//  В батьківського блока завжди повинні прописувати  async
+
+// async function fetchAsyncTodos() {
+//   console.log('Fetch todo started...')
+//   try {
+//     await delay(2000)
+//     const response = await fetch(url)
+//     const data = await response.json()
+//     console.log('Data: ', data)
+//   } catch (e) {
+//     console.error(e)
+//   }
+// }
+
+// fetchAsyncTodos()
+
+
+// +++++++++++++++++++++++
 //  Classes 
 
 // class Component {
