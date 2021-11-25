@@ -1,5 +1,8 @@
 
 
+
+
+
 // // Arrays
 // const people = [
 //   { name: 'Dima', age: 26, budget: 4000 },
