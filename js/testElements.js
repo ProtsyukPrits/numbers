@@ -1,32 +1,32 @@
-let date = new Date()
+// let date = new Date()
 // function btn() {
   
 //   document.getElementById('date').innerHTML = date
 // }
 
-const p = document.querySelector('button');
+// const p = document.querySelector('button');
 
-p.onmouseover = logMouseOver;
-p.onmouseout = logMouseOut;
-
-
+// p.onmouseover = logMouseOver;
+// p.onmouseout = logMouseOut;
 
 
 
-function logMouseOver() {
-  document.getElementById('date').innerHTML = date
-  document.getElementById('date').style.background = '#66beab'
-  document.getElementById('date').style.color = 'black'
+
+
+// function logMouseOver() {
+//   document.getElementById('date').innerHTML = date
+//   document.getElementById('date').style.background = '#66beab'
+//   document.getElementById('date').style.color = 'black'
     
-}
+// }
 
-function logMouseOut() {
-  document.getElementById('date').innerHTML = 'Ours hour'
-  document.getElementById('date').style.background = 'white'
-  document.getElementById('date').style.color = 'black'
+// function logMouseOut() {
+//   document.getElementById('date').innerHTML = 'Ours hour'
+//   document.getElementById('date').style.background = 'white'
+//   document.getElementById('date').style.color = 'black'
     
   
-}
+// }
 
 
 
