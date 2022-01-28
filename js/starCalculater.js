@@ -1,7 +1,8 @@
 let starArray = [62, 79, 49, 87, 40, 2, 26, 20, 8, 61, 48, 24, 31, 74, 77, 23, 80, 37, 18, 78, 68, 56, 82, 12,
     57, 59, 72, 4, 39, 53, 22, 4, 75, 71, 6, 68, 89, 45, 73, 3, 16, 4, 53, 58, 24, 19, 19, 58, 67, 78, 58, 67,
     78, 20, 72, 31, 90, 6, 23, 80, 53, 11, 46, 42, 3, 61, 78, 53, 49, 35, 13, 22, 30, 36, 57, 5, 17, 11, 18, 77,
-    72, 49, 13, 80, 48, 38, 47, 59, 76, 49, 9
+    72, 49, 13, 80, 48, 38, 47, 59, 76, 49, 9, 33, 55, 45, 29, 40, 78, 61, 47, 79, 27
+
 
 
 
@@ -58,11 +59,7 @@ let starArray = [62, 79, 49, 87, 40, 2, 26, 20, 8, 61, 48, 24, 31, 74, 77, 23, 8
 
     Number 81:  ${b[80]} Number 82:  ${b[81]} Number 83:  ${b[82]} Number 84:  ${b[83]} 
     Number 85:  ${b[84]} Number 86:  ${b[85]} Number 87:  ${b[86]} Number 88:  ${b[87]} 
-    Number 89:  ${b[88]} Number 90:  ${b[89]} 
-
-    Number 91:  ${b[90]} Number 92:  ${b[91]} Number 93:  ${b[92]} Number 94:  ${b[93]} 
-    Number 95:  ${b[94]} Number 96:  ${b[95]} Number 97:  ${b[96]} Number 98:  ${b[97]} 
-    Number 99:  ${b[98]} `
+    Number 89:  ${b[88]} Number 90:  ${b[89]} `
 
 // Привязка номера і к-сті та сортовка мах до min значень    
     b = b.map((item, index) => {
@@ -128,11 +125,6 @@ document.getElementById("demo4").innerHTML =`
     Number ${b[83].number} : ${b[83].quantity} Number ${b[84].number} : ${b[84].quantity} 
     Number ${b[85].number} : ${b[85].quantity} Number ${b[86].number} : ${b[86].quantity} 
     Number ${b[87].number} : ${b[87].quantity} Number ${b[88].number} : ${b[88].quantity} 
-    Number ${b[89].number} : ${b[89].quantity} Number ${b[90].number} : ${b[90].quantity}  
-
-    Number ${b[91].number} : ${b[91].quantity} Number ${b[92].number} : ${b[92].quantity} 
-    Number ${b[93].number} : ${b[93].quantity} Number ${b[94].number} : ${b[94].quantity} 
-    Number ${b[95].number} : ${b[95].quantity} Number ${b[96].number} : ${b[96].quantity} 
-    Number ${b[97].number} : ${b[97].quantity} Number ${b[98].number} : ${b[98].quantity} `
+    Number ${b[89].number} : ${b[89].quantity} `
    
     
